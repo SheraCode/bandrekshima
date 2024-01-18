@@ -1,0 +1,29 @@
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>Nama</th>
+      <th>Pesanan</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Aksi</th>
+    </tr>
+    </thead>
+    <tbody>
+        <% for(let i = 0; i < cart.length; i++) { %>
+    <tr>
+        <td><%= cart[i].userId.name %></td>        
+        <td><%= cart[i].name %></td>
+        <td><%= 'Rp ' + cart[i].price.toLocaleString() %></td>
+        <td><%= cart[i].status %></td>
+        <td>
+          <form action="/pesanan/delete/<%= cart[i]._id %>?_method=DELETE" method="POST">
+            <a href="/pesananselesai/edit/<%= cart[i]._id %>" class="btn btn-info btn-sm">
+              <i class="fas fa-pencil-alt"></i>
+              Lihat Detail
+            </a>
+          </form>        
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+  </table>

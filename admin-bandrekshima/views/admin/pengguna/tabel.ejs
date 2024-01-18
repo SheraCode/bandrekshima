@@ -1,0 +1,21 @@
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>Nama</th>
+      <th>Email</th>
+      <th>Telepon</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+        <% for(let i = 0; i < pengguna.length; i++) { %>
+    <tr>
+        <td><%= pengguna[i].name %></td>
+        <td><%= pengguna[i].email %></td>
+        <td><%= pengguna[i].telepon %></td>
+        <td><%= pengguna[i].address %></td>
+
+    </tr>
+    <% } %>
+    </tbody>
+  </table>

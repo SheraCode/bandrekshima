@@ -1,0 +1,12 @@
+// final url = 'http://192.168.134.1:2005/';
+// final url = 'http://192.168.42.59:2005/';
+final url = 'http://192.168.134.1:2005/';
+final registration = url + "register";
+final login = url + 'login';
+final addtodo = url + 'storeTodo';
+final getToDoList = url + 'getUserTodoList';
+final deleteCart = url + 'deleteCart';
+final cart = url +'storeCart';
+final getUserCart = url +'getUserCart';
+final getCheckoutUserCart = url +'getCheckoutUserCart';
+final checkoutBandrek = url +'checkout';
